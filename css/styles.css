@@ -95,6 +95,8 @@
 }
 .hero-button {
   background-color: var(--color-second);
+  font-family: inherit;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
