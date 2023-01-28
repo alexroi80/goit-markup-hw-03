@@ -40,6 +40,9 @@ html {
   width: var(--container-width);
   margin-left: auto;
   margin-right: auto;
+  padding-left: var(--container-padding-left);
+  padding-right: var(--container-padding-right);
+  
 }
 .centered {
   text-align: center;
@@ -50,14 +53,18 @@ html {
   justify-content: space-between;
   border-bottom: 1px solid var(--footer-text);
 }
+.container.page-header{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .header-nav {
   display: flex;
   align-items: center;
   padding: 0px;
 }
 
-.logo.link {
-  margin: 24px 76px 24px 15px;
+.logo-link {
+  margin-right: 76px;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -71,7 +78,6 @@ html {
   color: var(--color-second);
 }
 .header-nav.list {
-  margin: 24px 0px 24px 0px;
   padding: 0;
   width: 261px;
   display: flex;
@@ -98,11 +104,9 @@ html {
   justify-content: flex-end;
   align-items: center;
   margin-left: auto;
-  margin-right: var(--container-padding-right);
 }
 
 .contacts.list {
-  margin: 24px 0 24px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -125,13 +129,15 @@ html {
   background-color: var(--color-main);
   color: var(--footer-text);
 }
-.logo-studio {
+.page-footer .logo-link{
+  margin-right: 0;
   margin-bottom: 16px;
+}
+.logo-studio {
   color: var(--background-color-secondary);
 }
 .footer-text {
-  margin-top: 0;
-  margin-left: 15px;
+  margin: 0;
   width: 264px;
   font-size: 16px;
   line-height: 1.5;
@@ -344,7 +350,7 @@ html {
 .project-item {
   margin-top: 48px;
   margin-left: 24px;
-  border-bottom: 1px solid var(--footer-text);
+  
 }
 
 .project-item-name {
@@ -369,4 +375,5 @@ html {
   padding-bottom: var(--portfolio-card-padding);
   border-left: 1px solid var(--footer-text);
   border-right: 1px solid var(--footer-text);
+  border-bottom: 1px solid var(--footer-text);
 }
